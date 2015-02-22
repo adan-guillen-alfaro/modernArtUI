@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:baselineAligned="true"
+        android:layout_above="@+id/seekbar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/box1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="50"
+                android:background="@color/blue"
+                android:editable="false"
+                android:hint="" />
+
+            <EditText
+                android:id="@+id/box2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="50"
+                android:background="@color/red"
+                android:editable="false"
+                android:hint="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/box3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="30"
+                android:background="@color/red"
+                android:editable="false"
+                android:hint="" />
+
+            <EditText
+                android:id="@+id/box4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="40"
+                android:background="@color/white"
+                android:editable="false"
+                android:hint="" />
+
+            <EditText
+                android:id="@+id/box5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="30"
+                android:background="@color/blue"
+                android:editable="false"
+                android:hint="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        
+        android:layout_marginTop="2dp"
+        android:max="255" />
+
+</RelativeLayout>
